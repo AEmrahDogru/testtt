@@ -1,0 +1,33 @@
+.main-wrapper{
+	
+	//height: 100vh !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	top:0;
+	position: absolute;
+	width: 100vw;
+
+}
+
+body{
+	z-index: 0;
+	position: relative;
+}
+
+section{
+	z-index:1 !important;
+}
+
+// ::-webkit-scrollbar {
+//     width: 6px;
+//         background-color: #999;
+// }
+ 
+// ::-webkit-scrollbar-track {
+//     border-radius: 5px;
+// }
+ 
+// ::-webkit-scrollbar-thumb {
+//     border-radius: 10px;
+//     background-color: #555;
+// }

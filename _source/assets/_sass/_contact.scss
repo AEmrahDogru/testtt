@@ -1,0 +1,274 @@
+.contact-container{
+
+
+
+	.menu-bg{
+		background-color: $bando_navy;
+		height: 180px;
+		margin-bottom:0 !important;
+	}
+
+	.studio{
+		h1{
+			font-family: $font_playfair;
+			font-weight: 900;
+			font-size: 25px;
+			text-decoration: none;
+			color: $bando_navy !important;
+			margin-bottom: 20px;
+			
+		}
+		h2{
+			margin-top:0 !important;
+			font-family: $font_raleway;
+			font-weight: 300;
+			font-size: 32px;
+			color: $bando_navy !important;
+		}
+	}
+
+	.about{
+		h1{
+			font-family: $font_playfair;
+			font-weight: 900;
+			font-size: 25px;
+			text-decoration: none;
+			color: #5DFDCB !important;
+			margin-bottom: 20px;
+			
+		}
+		h2{
+			margin-top:0 !important;
+			font-family: $font_raleway;
+			font-weight: 300;
+			font-size: 32px;
+			color: #5DFDCB !important;
+		}
+	}
+
+	.services{
+		h1{
+			font-family: $font_playfair;
+			font-weight: 900;
+			font-size: 25px;
+			text-decoration: none;
+			color: $bando_navy !important;
+			margin-bottom: 20px;
+			
+		}
+		h2{
+			margin-top:0 !important;
+			font-family: $font_raleway;
+			font-weight: 400;
+			font-size: 20px;
+			color: $bando_navy !important;
+		}
+	}
+
+	.team{
+		h1{
+			font-family: $font_playfair;
+			font-weight: 900;
+			font-size: 25px;
+			text-decoration: none;
+			color: white !important;
+			margin-bottom: 20px;
+			
+		}
+		h2{
+			margin-top:0 !important;
+			font-family: $font_raleway;
+			font-weight: 300;
+			font-size: 32px;
+			color: $bando_navy !important;
+		}
+
+		.team-info{
+			position:relative;
+			top: -40px;
+			left:20px;
+			display:inline-block;
+
+			ul{
+				background-color: $bando_navy;
+				padding: 10px 30px;
+
+				li:nth-child(1){
+					color:#5DFDCB;
+					font-family: $font_raleway;
+					font-weight:700;
+					font-size:12px;
+				}
+			
+				li:nth-child(2){
+					color:white;
+					font-family: $font_raleway;
+					font-weight:200;
+					font-size:27px;
+				}
+			}
+		}
+
+
+		.team-social{
+					position: relative;
+					top: -40px;
+					left: 55px;
+			ul li a{
+
+					color: #4A4A4A;
+					font-family: $font_raleway;
+					font-weight: 700;
+					font-size: 11px;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+				}:hover{
+					text-decoration:underline;
+					color:#A59A6C;
+				}
+		}
+	}
+
+	.contact{
+		h1{
+			font-family: $font_playfair;
+			font-weight: 900;
+			font-size: 25px;
+			text-decoration: none;
+			color: $bando_navy !important;
+			margin-bottom: 20px;
+			
+		}
+		ol li, ol li a{
+			font-family: $font_raleway;
+			font-weight: 500;
+			font-size: 16px;
+			color: $bando_navy !important;
+		}li:nth-child(3n + 3){
+			margin-top:20px;
+		}
+	}
+
+
+	.mapboxgl-marker{
+
+			background: url(/assets/jpeg/studio/marker.png) no-repeat center center;
+	}
+
+	.projects{
+		.is-one-third{
+			.project-info-container{
+				.project-info-title{
+					h1{
+						font-size: 26px !important;
+					}
+				}
+
+				.project-info-subtitle{
+					h2{	
+						font-size: 18px !important;
+					}
+				}
+			}
+		}
+
+
+
+		.single-project{
+			position: relative;
+			overflow: hidden;
+		
+			.project-info-container{
+				margin-left: 50px;
+				align-self: center;
+				
+				.project-info-title{
+					overflow: hidden;
+
+
+					h1{
+						font-family: $font_playfair;
+						font-weight: 900;
+						font-size: 40px;
+						text-decoration: none;
+						color: white;
+						width: 90%;
+					
+						@media screen and (max-width:768px){
+							font-size:20px;
+						}
+
+						@media screen and (max-width:1024px){
+							font-size:26px;
+						}
+					}
+
+				}
+
+				.project-info-subtitle{
+					overflow: hidden;
+
+					h2{
+						font-family: $font_raleway;
+						font-weight: 400;
+						font-size: 22px;
+						color: $bando_gold;
+						letter-spacing: -0.5px;
+
+						@media screen and (max-width:768px){
+							font-size:16px;
+						}
+
+						@media screen and (max-width:1024px){
+							font-size:20px;
+						}
+					}
+				}
+
+
+				.goto-project{
+					position: absolute;
+					bottom: 40px;
+					overflow: hidden;
+					div{
+
+						float: left;	
+						overflow: hidden;
+							h3{
+							font-family: $font_raleway;
+							font-weight: 900;
+							font-size: 12px;
+							color: $bando_gold;
+							}
+					}
+
+					span {
+						display: inline-block;
+						margin: 0 15px 0 0;
+						height: 1px;
+						content: " ";
+						text-shadow: none;
+						background-color: #999;
+						width: 10px;
+						opacity: 1;
+						float: left;
+						top: 8px;
+						position: relative;
+					}
+
+				}
+			}
+
+
+		}
+	}
+
+} //PROJECT CONTAINER ENDS
+
+
+
+
+.grid-sizer,
+.grid-item { width: 33%; }
+/* 2 columns */
+.grid-item--width2 { width: 66%; }

@@ -1,0 +1,87 @@
+{% assign projects = site.data.projects %}
+
+
+
+{% for project in projects %}
+{% if project.url == page.check_name %}
+
+	<section class="single-project-container" style="background-color: {{project.hide_color}}">
+		
+		<div class="single-project-bigimage" style="background-image: url('{{site.baseurl}}/{{project.hero_image}}'); background-size: cover; background-position:center" ; ></div>
+		<!-- project hero image -->
+
+		<div class="single-project-info" style="background-color: {{project.bg_color}}">
+			
+			<div class="columns is-multiline" style="width: 100vw; align-content: flex-start;">
+				
+				<div class="column is-8  is-8-mobile single-hero-text" style="font-family: 'Playfair Display', serif;font-size: 70px;color: {{project.color}}; font-weight:900; font-style: italic; padding-bottom: 20px;line-height: 91px;padding-top: 100px; padding-left: 100px; opacity:0; transform: translateY(50px); text-decoration: underline;" >{{project.title}}
+				</div>
+				<div class="column is-4  is-4-mobile single-goto-project" style="align-self: center; text-align: right; padding-right: 100px;">
+					<div class="goback-project" style="position: relative;top: 10px;opacity:0; transform: translateY(50px);">
+						<a href="/projects"><p style="color:white;"><img style="margin-right: 10px;vertical-align: -1px;" src="{{ site.baseurl}}/assets/svg/back.svg" width="15" >ALL <span style="color: {{project.color}} !important;text-decoration: underline !important ;">PROJECTS</span></p></a>
+					</div>
+				</div>
+				<!-- project title -->
+
+				<div class="column is-6 content" style="padding-left: 100px;" >
+					<div lang="en" class="single-project-title" style="font-family: 'Raleway', serif;font-weight: 900; font-size: 40px;color: #151A2C;letter-spacing: 0;opacity:0; transform: translateY(50px);text-transform: uppercase;width: 400px; line-height: 45px;" >{{project.subtitle}}
+					</div>
+				</div>
+				<!-- project subtitle -->
+
+				<div class="column is-6 content" style="text-align: right;">
+					<div class="single-project-subtitle" style=" font-family: 'Raleway' , serif;font-size: 14px;color: #CDCDCD;letter-spacing: 1px;line-height: 21px;opacity:0; transform: translateY(50px);padding-right: 85px;padding-left: 50px;font-weight: 400;">{{project.content}}
+					</div>
+				</div>
+				<!-- project content -->
+
+				<div class="single-project-credits-footer" style="">
+					<div class="column is-6 content" >
+						
+						<div class="" style="width: 300px">
+							<div class="single-project-credits" style="color: {{project.color}}">CLIENT</div>
+							<div class="single-project-credits-dynamic" style="">{{project.client}}</div>
+							<div class="single-project-credits" style="color: {{project.color}}">YEAR</div>
+							<div class="single-project-credits-dynamic" style="">{{project.year}}</div>
+							<div class="single-project-credits" style="color: {{project.color}}">PROJECT</div>
+							<div class="single-project-credits-dynamic" style="">{{project.title}}</div>
+							<div class="single-project-credits" style="color: {{project.color}}">SERVICES</div>
+							<div class="single-project-credits-dynamic" style="">{{project.services}}</div>
+						</div>
+
+
+					</div> 
+					<!-- project kunye  -->
+
+					<div class="column is-6 content " style="text-align: right;position: absolute;right: 0;padding-right: 75px;" >
+						<div class="" style="font-family: 'Raleway', serif;font-size: 14px;letter-spacing: 0;font-weight: 900;color: #CDCDCD;">WEB SITE</div>
+						<div><a href="http://www.{{project.link}}" style="color: {{project.color}};	font-family: 'Raleway', serif;font-size: 14px;letter-spacing: 0;font-weight: 900;" target="_blank">{{project.link}}</a></div>
+					</div>
+					<!-- project link -->
+				</div>
+			</div>
+
+
+		</div>	<!-- end of single project info -->
+
+	</section> 	<!-- end of section 1 -->
+
+	<section class="section_02 container is-fluid" style="margin: 0 !important; top:0 !important; line-height: 0 !important; z-index: 1">
+
+	{% for img in project.portfolio %}
+
+		<div id="singleProjectMagic">
+			<div class="single_image_seperator" style="background-color: {{project.color}}"></div>
+			<div class="single_image_seperator_img" style=" ">
+				<img src="{{site.baseurl}}/{{img}}" style="width: 100vw;visibility: hidden;">
+			</div>
+		</div>
+		<!-- end of singleProjectMagic -->
+	{% endfor %}
+	</section>	<!-- end of section 2 -->
+
+
+{% endif %}
+{% endfor %}
+{% include pagination.html %}
+{% include sticky_footer.html %}

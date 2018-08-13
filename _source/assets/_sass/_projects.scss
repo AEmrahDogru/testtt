@@ -1,0 +1,284 @@
+.projects-container{
+
+	.project-section{
+		background-color: $projects_section_bg;
+		height: 240px;
+		text-align: center;
+		margin-bottom: 0 !important; 
+		align-items: center;
+		a{
+			font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 60px;
+            text-decoration: none;
+            color: $bando_navy;
+		}
+	
+
+	}
+
+	.menu-bg{
+		background-color: $bando_navy;
+		height: 180px;
+		margin-bottom:0 !important;
+	}
+
+	.projects{
+		.is-one-third{
+			.project-info-container{
+				.project-info-title{
+					h1{
+						font-size: 26px !important;
+					}
+				}
+
+				.project-info-subtitle{
+					h2{	
+						font-size: 18px !important;
+					}
+				}
+			}
+		}
+
+
+
+		.single-project{
+			position: relative;
+			overflow: hidden;
+		
+			.project-info-container{
+				margin-left: 50px;
+				align-self: center;
+				
+				.project-info-title{
+					overflow: hidden;
+
+
+					h1{
+						font-family: $font_playfair;
+						font-weight: 900;
+						font-size: 40px;
+						text-decoration: none;
+						color: white;
+						width: 90%;
+					
+						@media screen and (max-width:768px){
+							font-size:20px;
+						}
+
+						@media screen and (max-width:1024px){
+							font-size:26px;
+						}
+					}
+
+				}
+
+				.project-info-subtitle{
+					overflow: hidden;
+
+					h2{
+						font-family: $font_raleway;
+						font-weight: 400;
+						font-size: 22px;
+						color: $bando_gold;
+						letter-spacing: -0.5px;
+
+						@media screen and (max-width:768px){
+							font-size:16px;
+						}
+
+						@media screen and (max-width:1024px){
+							font-size:20px;
+						}
+					}
+				}
+
+
+				.goto-project{
+					position: absolute;
+					bottom: 40px;
+					overflow: hidden;
+					div{
+
+						float: left;	
+						overflow: hidden;
+							h3{
+							font-family: $font_raleway;
+							font-weight: 900;
+							font-size: 12px;
+							color: $bando_gold;
+							}
+					}
+
+					span {
+						display: inline-block;
+						margin: 0 15px 0 0;
+						height: 1px;
+						content: " ";
+						text-shadow: none;
+						background-color: #999;
+						width: 10px;
+						opacity: 1;
+						float: left;
+						top: 8px;
+						position: relative;
+					}
+
+				}
+			}
+
+
+		}
+	}
+
+	.column{
+
+		//background-color: red;
+			img{
+			display:block;
+        	width:100%; height:100%;
+     		object-fit: cover;
+
+		}
+	}
+} //PROJECT CONTAINER ENDS
+
+
+
+
+.single-project-container{
+	display:flex;
+	width: 100vw;
+	height: 150.5vh;
+	justify-content: center;
+	flex-flow: row wrap;
+
+}
+
+.single-project-bigimage{
+	transform: translate3d(0,0,0);
+	transition: transform 0.25s ease-out;
+	transform-style: preserve-3d;
+	width: 100vw;
+	height: 100vh;
+
+}
+.single-project-info {
+	width: calc(100vw - 40px);
+	top: calc(100vh - 300px);
+	position: absolute;
+	display: flex;
+	opacity: 0.9;
+
+			.single-hero-text{
+				@media screen and (max-width:768px){
+					padding: unset !important;
+					width: 90% !important;
+					margin: 20px !important;
+					text-align: left !important;
+
+			}
+			.single-goto-project{
+
+			width: 100% !important;
+
+
+
+			}
+
+		}
+	
+	.content{
+		
+		@media screen and (max-width:768px){
+			padding-left: unset !important;
+		
+		}
+		
+
+
+
+		.single-project-title{
+				@media screen and (max-width:768px){
+					width: 90% !important;
+					margin: 20px !important;
+
+				}
+		}
+
+		.single-project-subtitle{
+	
+				@media screen and (max-width:768px){
+					width: 90% !important;
+					margin: 20px !important;
+					padding: unset !important;
+					text-align: left !important;
+
+				}
+
+		}
+	
+
+
+
+
+
+
+	} //content
+
+}
+
+.single-project-content{
+	// position: relative;
+}
+
+
+.single-project-credits{
+	width: 30%;
+	float: left;
+	position: relative;
+	font-family: 'Raleway', serif;
+	font-size: 14px;
+	letter-spacing: 0;
+	font-weight: 900;
+}
+
+.single-project-credits-dynamic{
+	width: 70%;
+	float: left;
+	position: relative;
+	font-family: 'Raleway' , serif;
+	font-size: 14px;
+	color: #CDCDCD;
+	letter-spacing: 1px;
+	line-height: 21px;
+	font-weight: 400;
+
+}
+
+
+.single_image_seperator{
+position: absolute;
+width: 0;
+opacity: 1;
+height: 0;
+z-index: 100;
+}
+
+
+.single-project-credits-footer{
+		
+		width: 100%;
+		padding: 0px 90px 90px 90px;
+
+		@media screen and (max-width:768px){
+			padding: 0 !important;
+		
+		}
+}
+
+
+.grid-sizer,
+.grid-item { width: 33%; }
+/* 2 columns */
+.grid-item--width2 { width: 66%; }

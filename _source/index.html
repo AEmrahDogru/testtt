@@ -1,0 +1,81 @@
+---
+layout: default
+title: Home1
+container_name: homepage
+---
+
+
+
+
+<div class="home">
+
+            <div id="left"></div>
+            <div id="right"></div>
+            <div id="top"></div>
+            <div id="bottom"></div>
+                
+        <div class="swiper-container ">
+                <!-- Slides -->
+                <div class="swiper-wrapper">
+                        {% for project in site.data.projects %}
+
+
+                    <div class="swiper-slide">
+
+
+
+                 
+                        
+                            {% if project.is-video == "true" %}
+                                    <div class="video-wrap" >
+                                        
+                                    <video id="video-wrap"  class="video-wrap-single" style="position: fixed;object-fit: cover; right: 0;min-width: 100%;min-height: 100%;width: auto;height: 100%;z-index: -100; max-width: unset !important;" autoplay muted loop src="{{ project.hero_video }}"></video>
+                                    </div>
+
+                            {% endif %}
+
+                            {% if project.is-video  == "false" %}       
+
+                                    <div class="img-wrap" >
+                                        <img src="{{ project.hero_image }}" alt="{{ project.url }}" id="img-wrap">
+                                    </div>
+                            {% endif %}
+             
+
+                                    <div class="home-info" style="background-color:{{ project.bg_color }}">
+                                            <div class="home-info-title">Case</div>
+                                            <div class=" home-info-project-title">{{ project.title}}</div>
+                                            <div class="home-info-project-content">{{ project.content}}</div>
+                                            <div class="home-info-project-link">
+                                            </div>
+                                            <div class="home-info-project-link">
+                                              <a href="{% if project.client == "Bando"%} {{ site.baseurl}}/studio {% endif %}  {% if project.client != "Bando" %} {{ site.baseurl}}/project/{{project.url}}{% endif %} "><p style="color:white;">GO TO <span style="color:{{ project.color }};text-decoration: underline !important ;">PROJECT</span><img style="margin-right: 10px;vertical-align: -1px;" src="{{ site.baseurl}}/assets/svg/forth.svg" width="15" ></p></a>
+                                            </div>
+                                    </div>
+
+                            </div>
+                        <!-- end of single swiper slide -->
+
+                        {% endfor %}
+                </div><!-- If we need pagination -->
+                
+
+                <div class="site-pagination-container">
+                    <div class="site-pagination"> </div>
+                         <div class="section-works-container">
+                            <div style="" class="lifestyle-main-link">LifeStyle</div>
+                            <div class="entertainment-main-link">Entertainment</div>
+
+                          </div>
+                </div><!-- site pagination ends -->
+
+
+
+        </div>
+
+
+        
+</div>
+
+
+</div>

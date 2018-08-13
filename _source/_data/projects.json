@@ -1,0 +1,114 @@
+[
+        {
+        
+        "title"             : "Ba'ndo Creative Studio",
+        "subtitle"          : "Talent. Pasion. Curouisty.",
+        "content"           : "We are innovators, instigators and storytellers with a mission to disrupt the traditional marketing, media and entertainment industries. So, you may find us creating a content, a brand identity, a commercial, a website, an app, or even an object for our clients, audiences or for ourselves.",
+        "thumbnail_image"   : "",
+        "hero_image"        : "",
+        "hero_video"        : "assets/footages/main_footage.mp4",
+        "url"               : "/studio",
+        "color"             : "#A59A6C",
+        "bg_color"          : "#151A2C",
+        "hide_color"        : "",
+        "category"          : "",
+        "is-homepage"       : "true",
+        "is-video"          : "true",
+        "thumbnail_style"   : "",
+        "services"          : "Full Service Creative Studio",
+        "year"              : "2016",
+        "client"            : "Bando",
+        "link"              : "",
+        "portfolio"  : 
+                                [
+                                ],
+     
+      },
+      {
+        
+        "title"             : "Yorstruly",
+        "subtitle"          : "Fall Winter 2016 Photoshoting.",
+        "content"           : "y.orstruly's vision is to always construct with the finest, premium fabrics, accentuating the body performance in the most sophisticated fit, while endorsing for the self truth.",
+        "thumbnail_image"   : "assets/jpeg/projects/thumbs/yorstruly_t.jpg",
+        "hero_image"        : "assets/jpeg/slideshow/00.jpg",
+        "hero_video"        : "",
+        "url"               : "yorstruly",
+        "color"             : "#FF006E",
+        "bg_color"          : "rgb(42, 13, 158)",
+        "hide_color"        : "#150D18",
+        "category"          : "lifestyle",
+        "is-homepage"       : "true",
+        "is-video"          : "false",
+        "thumbnail_style"   : "is-one-third",
+        "services"          : "Concept & Photoshoting",
+        "year"              : "2016",
+        "client"            : "Yorstruly",
+        "link"              : "yorstruly.com",
+        "portfolio"  : 
+                                [
+                                    "assets/jpeg/projects/big/yors_00.jpg",
+                                    "assets/jpeg/projects/big/yors_00.jpg",
+                                    "assets/jpeg/projects/big/yors_02.jpg",
+                                ],
+     
+    },
+
+    {
+        
+        "title"             : "25 Film",
+        "subtitle"          : "Film and Production Company Web Site",
+        "content"           : "25Film who was found by Fırat Parlak and Koray Şahin in 2009, has been covering all the production and post-production needs of TV Series, movies, commercials and quiz shows with its experienced director and producer team in Turkey. The company is also offering services to foreigners who are seeking production solutions in Turkey. We, now continue our productions with success.",
+        "thumbnail_image"   : "assets/jpeg/projects/thumbs/25film_t.jpg",
+        "hero_image"        : "assets/jpeg/projects/big/25film_hero.jpg",
+        "hero_video"        : "assets/footages/25Film.mp4",
+        "url"               : "25film",
+        "color"             : "#5080FF",
+        "bg_color"          : "rgb(0, 0, 0)",
+        "hide_color"        : "#111",
+        "category"          : "lifestyle",
+        "is-homepage"       : "true",
+        "is-video"          : "true",
+        "thumbnail_style"   : "is-one-third",
+        "services"          : "Web Design & Development",
+        "year"              : "2017",
+        "client"            : "25film",
+        "link"              : "25film.net",
+        "portfolio"  : 
+                                [
+                                    "assets/jpeg/projects/big/yors_00.jpg",
+                                    "assets/jpeg/projects/big/yors_00.jpg",
+                                    "assets/jpeg/projects/big/yors_02.jpg",
+                                ],
+     
+    },
+
+        {
+        
+        "title"             : "Güntaç Özdemir",
+        "subtitle"          : "Falaka Music Video & Album Cover",
+        "content"           : "25Film who was found by Fırat Parlak and Koray Şahin in 2009, has been covering all the production and post-production needs of TV Series, movies, commercials and quiz shows with its experienced director and producer team in Turkey. The company is also offering services to foreigners who are seeking production solutions in Turkey. We, now continue our productions with success.",
+        "thumbnail_image"   : "assets/jpeg/projects/thumbs/25film_t.jpg",
+        "hero_image"        : "assets/jpeg/projects/big/guntac_00.jpg",
+        "hero_video"        : "assets/footages/GUNTAC_FALAKA.mp4",
+        "url"               : "guntac_ozdemir",
+        "color"             : "#ffc519",
+        "bg_color"          : "#ca3d00",
+        "hide_color"        : "#ffc519",
+        "category"          : "entertainment",
+        "is-homepage"       : "true",
+        "is-video"          : "true",
+        "thumbnail_style"   : "is-one-third",
+        "services"          : "Music Video & Album Cover",
+        "year"              : "2017",
+        "client"            : "Güntaç Özdemir",
+        "link"              : "25film.net",
+        "portfolio"  : 
+                                [
+                                    "assets/jpeg/projects/big/guntac_00.jpg",
+                                ],
+     
+    }
+
+
+
+]
