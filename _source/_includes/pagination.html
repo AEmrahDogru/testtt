@@ -1,0 +1,51 @@
+<!-- -- //pagination container starts-->		
+<div class="container is-fluid paginations" style="position: relative;z-index: 1">
+	
+{% capture the_collection %}{{ page.collection }}{% endcapture %}
+
+					{% if page.collection %}
+					{% assign document = site[the_collection] %}
+					{% endif %}
+
+					{% for links in document %}
+					{% if links.title == page.title %}
+					{% unless forloop.first %}
+					  {% assign prevurl = prev.url %}
+					  {% assign prevtitle = prev.title %}
+					{% endunless %}
+					{% unless forloop.last %}
+					  {% assign next = document[forloop.index] %}
+					  {% assign nexttitle = next.title %}
+					  {% assign nexturl = next.url %}
+					{% endunless %}
+					{% endif %}
+					{% assign prev = links %}
+					{% endfor %}
+
+
+
+					<div class="columns has-text-centered is-gapless" style="background-color: #C40000; height: 225px; width: 100vw; align-items: center; margin-bottom: 0">
+					
+
+					{% if prevurl %}
+						<div class="column is-half"><a href="{{ prevurl }}"><span class="raleway_xsmall" style="color:#FB5607 ">PREVIOUS PROJECT</span> </br><span class="raleway_xbig" style="color: white; line-height: 30px;    font-size: 2.5vw;">{{ prevtitle}}</span> </a></div>
+					{% endif %}
+						
+					
+
+					{% if nexturl %}
+						<div class="column"><a href="{{ nexturl }}"><span span class="raleway_xsmall" style="color:#FB5607 ">NEXT PROJECT</span> </br><span class="raleway_xbig" style="color: white; line-height: 30px;    font-size: 2.5vw;" >{{ nexttitle }}</span></a></div>
+						</div>
+					{% endif %}
+
+					<script>
+					/* post pagination keyboard shortcuts */
+					document.body.onkeyup = function(e){
+					if (e.keyCode == '37') { window.location = '{{ prevurl }}'; } // left arrow key
+					if (e.keyCode == '39') { window.location = '{{ nexturl }}'; } // right arrow key
+					};
+					</script>
+</div> <!-- -- //pagination container ends-->					
+
+
+					
